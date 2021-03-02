@@ -1,6 +1,8 @@
-# Mothership Attendance
+# TCP Automated Attendance (Mothership Attendance)
+Mothership Attendance is a Java Swing/AWT Desktop Application which can be used in order for 
 An Account Based Java Swing Program which Allows For Teachers to Mark / Modify Student Attendance Records Via a Remote MySQL Database and TCP Server-Client Connection Interface.
 
+![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_B.png)
