@@ -21,24 +21,25 @@ Additionally, a video walkthrough of the Mothership Attendance Application can b
 
 [![Mothership Attendance Walkthrough](Screenshots/Youtube_Link.png)](https://youtu.be/7Z4EQI0jJ98)
 
-## Database Guide
+## Database Implementation
 This application uses a remote database connection in conjunction with [MySQL](https://www.mysql.com/) in order to catalog progress from previous user sessions. The remote database is hosted by the online service [myPHPAdmin](https://www.phpmyadmin.net/) and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
 
 ![Alt Text](Screenshots/Screenshot_ER_Diagram.png)
 
-There are two primary types of tables in the ER Diagram above. The "Instructor" and "Student" tables, which have colorized red headers, are classified as Account Tables. This type of table is responsible for holding the data associated with the user created profiles in the application. While both are classified as Account Tables in the application, they also accept different types of information in addition to having different primary and foriegn key properties.
+There are two primary types of tables in the ER Diagram above. The "Instructor" and "Student" tables, which have colorized red headers, are classified as Account Tables. This type of table is responsible for holding the data associated with the user created profiles in the application. While both are classified as account types tables, they also accept different types of information in addition to having different primary and foriegn key properties. For more information regarding the implementation of the Account Creation Segment, please reference the [Account Creation](#Account-Creation) Section. 
 
-### Account Creation: Instructor
-Instructor Accounts require the following information upon first being created:
-* First Name
-* Last Name
-* Email
-* Username
-* Password
+Unlike Instructor Accounts, which can only be identified via thier unique database identification number and username properties, Student Accounts have a third unqiue property, a Student Identification Number (StudentID). Student Profiles are given this third property due to the heavy distribution and frequent reference of thier basic profile information in the main window of the application. This design concept was implemented seeing as it is much easier to search for and keep track of the student's university / school issued identification number as opposed to thier generic database entry number. While this isn't absolutely neccesary due to the small size of the remote database, should the amount of student profiles ever reach an exponential size, it will make it much easier to find specified Student Accounts in addition to improving the application's overall performance. 
 
-A user can access the Account Creation Screen via the "Create Account" JButton Component located at the bottom left of the Login Window. For more information regarding the implementation of the Account Creation segment, please go to the following link: [Account Creation](#Account-Creation). 
+A Student Account's display name, email address, and profile image properties are frequently shared and displayed on the Instructor's side of the Application. For instance, during a running instance of the Attendance Server, the Instructor's side of the application will display the following information after a student account has successfully connected:
 
-The 
+![Alt Text](Screenshots/Screenshot_Instructor_Attendance_Server.png)
+
+Alternatively, the Student's side of the application will only show the display name and profile picture properties during a running Instance of the Attendance Server:
+
+![Alt Text](Screenshots/Screenshot_Student_Attendance_Server.png)
+
+This design style is implemented in order to regulate the amount of sensitive data being distributed and enforce the concept of least priveledge. While the Student ID Number may not appear as sensitive within the actual scope of the application; should the program actually be used in a university or school based setting, it will ensure that the instructor accounts are the only people privy to such potentially damaging information.
+
 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead classes which it will need in order to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application may appear during this segment:
