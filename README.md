@@ -12,7 +12,7 @@ Mothership Attendance is a Java Swing / AWT application which functions as an at
 The features mentioned above, and their processes of implementation will be explained in depth further on within the report. If you wish to skip to a particular section, please click on the corresponding link below in the table of contents:
 
 * [Application Start](#Application-Start)
-* [Login / Account Creation Process](#Login-&-Account-Creation-Process)
+* [Login / Account Creation Process](#Login-/-Account-Creation-Process)
 * [Custom foo description](#foo)
 
 ## Application Start
@@ -30,7 +30,7 @@ Users are then greeted with a directory screen which provides them with a small 
 ![Alt Text](Screenshots/Screenshot_3.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 
-## Login & Account Creation Process
+## Login / Account Creation Process
 
 During the login process, the application will authenticate the specified username and password values via a remote database search. Should the specified password value fail to match or the specified username isn’t found, then the application will display a customized warning message that explains why the login process has failed. The login screen will appear the same way regardless of which designation button the user has clicked. The series of images below display how the login window will appear in addition to one of the error catching processes and how it will alter the overall look of the GUI:
 
