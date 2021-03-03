@@ -17,12 +17,28 @@ The features mentioned above, and their processes of implementation will be expl
 * [Login Screen](#Login-Screen)
 * [Account Creation](#Account-Creation)
 
+Additionally, a video walkthrough of the Mothership Attendance Application can be found at the following link:
+
+[![Mothership Attendance Walkthrough](Screenshots/Youtube_Link.png)](https://youtu.be/7Z4EQI0jJ98)
+
 ## Database Guide
-This application implements a remote database connection in order to save user progress from previous sessions. The remote database is hosted by the online service [myPHPAdmin](https://www.phpmyadmin.net/) and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
+This application uses a remote database connection in conjunction with [MySQL](https://www.mysql.com/) in order to catalog progress from previous user sessions. The remote database is hosted by the online service [myPHPAdmin](https://www.phpmyadmin.net/) and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
 
 ![Alt Text](Screenshots/Screenshot_ER_Diagram.png)
 
-heloo
+There are two primary types of tables in the ER Diagram above. The "Instructor" and "Student" tables, which have colorized red headers, are classified as Account Tables. This type of table is responsible for holding the data associated with the user created profiles in the application. While both are classified as Account Tables in the application, they also accept different types of information in addition to having different primary and foriegn key properties.
+
+### Account Creation: Instructor
+Instructor Accounts require the following information upon first being created:
+* First Name
+* Last Name
+* Email
+* Username
+* Password
+
+A user can access the Account Creation Screen via the "Create Account" JButton Component located at the bottom left of the Login Window. For more information regarding the implementation of the Account Creation segment, please go to the following link: [Account Creation](#Account-Creation). 
+
+The 
 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead classes which it will need in order to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application may appear during this segment:
@@ -51,7 +67,6 @@ During the login process, the application will authenticate the specified userna
 ![Alt Text](Screenshots/divider_line_neon.png)
 
 ## Account Creation
-[![Mothership Attendance Walkthrough](https://img.youtube.com/vi/https://youtu.be/7Z4EQI0jJ98/default.jpg)](https://youtu.be/7Z4EQI0jJ98)
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
