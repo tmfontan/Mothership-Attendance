@@ -19,10 +19,14 @@ Upon starting the application, users are first greeted with an introductory scre
 ![Alt Text](Screenshots/Screenshot_2.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 
-Users are then greeted with a directory screen which provides them with a small set of instructions and allows them to choose between one of two separate designations. Individuals can choose to continue as either an “Instructor” or “Student” account whose differing features will be explained in the next section. A user can then choose to either login with a preexisting account or create a new profile via a button displayed at the bottom of the login screen. The images below shows how this segment of the application will appear:
+Users are then greeted with a directory screen which provides them with a small set of instructions and allows them to choose between one of two separate designations. Individuals can choose to continue as either an “Instructor” or “Student” account whose differing features will be explained in the next section. A user can then choose to either login with a preexisting account or create a new profile via a button displayed at the bottom of the login screen. The image below show how this directory segment of the application will appear:
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_3.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+
+During the login process, the application will authenticate the specified username and password values via a remote database search. Should the specified password value fail to match or the specified username isn’t found, then the application will display a customized warning message that explains why the login process has failed. The login screen will appear the same way regardless of which designation button the user has clicked. The series of images below display how the login window will appear in addition to one of the error catching processes and how it will alter the overall look of the GUI:
+
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_4.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
