@@ -26,21 +26,23 @@ This application uses a remote database connection in conjunction with [MySQL](h
 
 ![Alt Text](Screenshots/Screenshot_ER_Diagram.png)
 
+### Account Tables
 There are two primary types of tables in the ER Diagram above. The "Instructor" and "Student" tables, which have colorized red headers, are classified as <em>Account Tables</em>. This type of table is responsible for holding the data associated with the user created profiles in the application. While both are classified as account types tables, they also accept different types of information in addition to having different primary and foriegn key properties. For more information regarding the implementation of the Account Creation Segment, please reference the [Account Creation](#Account-Creation) Section. 
 
 Unlike Instructor Accounts, which can only be identified via thier unique database identification number and username properties, Student Accounts have a third unqiue property, a Student Identification Number (StudentID). Student Profiles are given this third property due to the heavy distribution and frequent reference of thier basic profile information in the main window of the application. This design concept was implemented seeing as it is much easier to search for and keep track of the student's university / school issued identification number as opposed to thier generic database entry number. While this isn't absolutely neccesary due to the small size of the remote database, should the amount of student profiles ever reach an exponential size, it will make it much easier to find specified Student Accounts in addition to improving the application's overall performance. 
 
 A Student Account's display name, email address, and profile image properties are frequently shared and displayed on the Instructor's side of the Application. For instance, during a running instance of the Attendance Server, the Instructor's side of the application will display the following information after a student account has successfully connected:
 
-![Alt Text](Screenshots/Screenshot_Instructor_Attendance_Server.png)
+![Alt Text](Screenshots/Screenshot_IAS.png)
 
 Alternatively, the Student's side of the application will only show the display name and profile picture properties during a running Instance of the Attendance Server:
 
-![Alt Text](Screenshots/Screenshot_Student_Attendance_Server.png)
+![Alt Text](Screenshots/Screenshot_SAS.png)
 
 This design style is implemented in order to regulate the amount of sensitive data being distributed and enforce the concept of least priveledge. While the Student ID Number may not be considered sensitive within the actual scope of the application; should the program actually be used in a university or school based setting, it will ensure that the instructor accounts are the only individuals privy to such potentially damaging information.
 
-The second type of table located within the remote database are classified as <em>Link Tables</em>. These tables, which are classified by a blue colorized header, are responsible for linking the different account type profiles to a specified <em>Course</em> or <em>Class</em> entry. In order to better categorize and efficently search for certain students, 
+### Link Tables
+The second type of table located within the remote database are classified as <em>Link Tables</em>. These tables, which are classified by a blue colorized header, are responsible for linking the different account type profiles to a specified <em>Course</em> or "Class" entry. This is done in order to shorten the list of available students that the application needs to search through in order to find thier profile information. 
 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead classes which it will need in order to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application may appear during this segment:
