@@ -18,7 +18,7 @@ The features mentioned above, and their processes of implementation will be expl
 * [Account Creation](#Account-Creation)
 
 ## Database Guide
-This application implements a remote database connection in order to save user progress from previous sessions. The remote database is hosted by the online service myPHPAdmin and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
+This application implements a remote database connection in order to save user progress from previous sessions. The remote database is hosted by the online service [myPHPAdmin](https://www.phpmyadmin.net/) and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
 
 ![Alt Text](Screenshots/Screenshot_ER_Diagram.png)
 
