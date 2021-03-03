@@ -1,7 +1,7 @@
 # TCP Automated Attendance (Mothership Attendance)
 
 ![Alt Text](Screenshots/Social_Media_Image.jpg)
-
+[![Mothership Attendance Walkthrough](http://i3.ytimg.com/vi/7Z4EQI0jJ98/hqdefault.jpg)](https://youtu.be/7Z4EQI0jJ98)
 Mothership Attendance is a Java Swing / AWT application which functions as an attendance recording tool for a group of custom created attendee accounts. Other than the previously mentioned process, the application also gives user’s access to four separate features depending on the their selected account type. A list of these additional features is provided below:
 
 *	Profile Customization
@@ -18,8 +18,11 @@ The features mentioned above, and their processes of implementation will be expl
 * [Account Creation](#Account-Creation)
 
 ## Database Guide
-This application implements a remote database connection in order to save user progress from previous sessions. The remote database is hosted by the online service myPHPAdmin and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
-![Alt Text](ERDiagram.pdf)
+This application implements a remote database connection in order to save user progress from previous sessions. The remote database is hosted by the online service [myPHPAdmin](https://www.phpmyadmin.net/) and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
+
+![Alt Text](Screenshots/Screenshot_ER_Diagram.png)
+
+heloo
 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead classes which it will need in order to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application may appear during this segment:
@@ -48,6 +51,7 @@ During the login process, the application will authenticate the specified userna
 ![Alt Text](Screenshots/divider_line_neon.png)
 
 ## Account Creation
+[![Mothership Attendance Walkthrough](https://img.youtube.com/vi/https://youtu.be/7Z4EQI0jJ98/default.jpg)](https://youtu.be/7Z4EQI0jJ98)
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
