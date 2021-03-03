@@ -1,6 +1,6 @@
 # TCP Automated Attendance (Mothership Attendance)
 
-![Alt Text](Screenshots/Social_Media_Image.png)
+![Alt Text](Screenshots/Social_Media_Image.jpg)
 
 Mothership Attendance is a Java Swing / AWT application which functions as an attendance recording tool for a group of custom created attendee accounts. Other than the previously mentioned process, the application also gives user’s access to four separate features depending on the their selected account type. A list of these additional features is provided below:
 
