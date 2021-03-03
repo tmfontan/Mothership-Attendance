@@ -12,12 +12,24 @@ Mothership Attendance is a Java Swing/AWT application which functions as an atte
 The functions mentioned above, and their processes of implementation will be explained in depth further on. 
 
 Upon starting the application, users are first greeted with an introductory screen that displays a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead classes which it will need in order to function. While this occurs, a GIF image displaying multiple nature images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the project may appear during this segment:
+
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_1.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_2.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 
+Users are then greeted with a directory screen which provides them with a small set of instructions and allows them to choose between one of two separate designations. Individuals can choose to continue as either an “Instructor” or “Student” account whose differing features will be explained in the next section. A user can then choose to either login with a preexisting account or create a new profile via a button displayed at the bottom of the login screen. The images below shows how this segment of the application will appear:
+
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_3.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_4.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_5.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_6.png)
+![Alt Text](Screenshots/divider_line_neon.png)
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
