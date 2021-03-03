@@ -1620,13 +1620,15 @@ public class MainScreen extends javax.swing.JFrame {
         });
         jScrollPane6.setViewportView(jTable6);
 
-        jLabel25.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/ByClass.png")); // NOI18N
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/SearchRecords.png"))); // NOI18N
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/ByClass.png"))); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Date:");
 
-        jLabel26.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/ByStudent.png")); // NOI18N
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/ByStudent.png"))); // NOI18N
 
         jLabel27.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
@@ -1637,7 +1639,7 @@ public class MainScreen extends javax.swing.JFrame {
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("Student:");
 
-        jButton3.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/ShowResultsButtonScaled.png")); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/ShowResultsButtonScaled.png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -1722,8 +1724,6 @@ public class MainScreen extends javax.swing.JFrame {
         jRadioButton3.setVisible(false);
         jRadioButton3.setEnabled(false);
         jRadioButton4.setVisible(false);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/VerticalDivider.png")); // NOI18N
 
         jPanel11.setOpaque(false);
 
@@ -2146,7 +2146,7 @@ public class MainScreen extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Class:");
 
-        jLabel29.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/styleLine.png")); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/styleLine.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
@@ -2269,7 +2269,7 @@ public class MainScreen extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Franklin Gothic Book", 0, 48)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel14.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/AttendanceRecordsResized.png")); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/AttendanceRecordsResized.png"))); // NOI18N
         jLabel14.setToolTipText("");
 
         jPanel35.setOpaque(false);
@@ -2312,7 +2312,7 @@ public class MainScreen extends javax.swing.JFrame {
 
         jPanel36.setPreferredSize(new java.awt.Dimension(900, 588));
 
-        jLabel16.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/BackgroundDirectoryScreen900x588.png")); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/BackgroundDirectoryScreen900x588.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel36Layout = new javax.swing.GroupLayout(jPanel36);
         jPanel36.setLayout(jPanel36Layout);

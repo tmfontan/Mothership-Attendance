@@ -85,7 +85,7 @@ public class ServerConnectionSuccessful extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/chemark78x78.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/chemark78x78.png"))); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));

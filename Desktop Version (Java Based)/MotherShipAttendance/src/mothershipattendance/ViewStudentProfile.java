@@ -512,7 +512,7 @@ public class ViewStudentProfile extends javax.swing.JFrame {
 
         jPanel3.setOpaque(false);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/tylerfontana/Downloads/BackgroundDirectoryScreen558x316.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mothershipattendance/Image/BackgroundDirectoryScreen558x316.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

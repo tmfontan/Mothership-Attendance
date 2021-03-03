@@ -125,9 +125,9 @@ public class WarningMessageACConfirmUsername extends javax.swing.JFrame {
                     .addContainerGap(25, Short.MAX_VALUE)))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(25, Short.MAX_VALUE)
+                    .addContainerGap(26, Short.MAX_VALUE)
                     .addComponent(jLabel2)
-                    .addContainerGap(261, Short.MAX_VALUE)))
+                    .addContainerGap(260, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
