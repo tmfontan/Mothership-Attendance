@@ -5,7 +5,7 @@ Mothership Attendance is a Java Swing/AWT application which functions as an atte
 *	Profile Customization
 *	Course Creation / Management
 *	Chat Interface
-*	Attendance Record Management
+*	Attendee Record Manipulation
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
