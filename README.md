@@ -51,6 +51,7 @@ During the login process, the application will authenticate the specified userna
 ![Alt Text](Screenshots/divider_line_neon.png)
 
 ## Account Creation
+[![Mothership Attendance Walkthrough](https://img.youtube.com/vi/https://youtu.be/7Z4EQI0jJ98/default.jpg)](https://youtu.be/7Z4EQI0jJ98)
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
