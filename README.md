@@ -7,6 +7,16 @@ Mothership Attendance is a Java Swing/AWT application which functions as an atte
 *	Attendee Chat Interface
 *	Attendance Record Manipulation
 
+The functions mentioned above, and their processes of implementation will be explained in depth further on. 
+
+Upon starting the application, users are first greeted with an introductory screen that displays a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead classes which it will need in order to function. While this occurs, a GIF image displaying multiple nature images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the project may appear during this segment:
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_1.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_2.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+
+
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
