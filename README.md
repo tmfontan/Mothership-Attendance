@@ -102,9 +102,23 @@ The rules mentioned above apply to the same types of input fields and conditions
 
 ##
 
-There is currently no penalty for numerous failed login attempts which does affect the security of the application. However, this feature will be added in the next release.
+There is currently no penalty for numerous failed login attempts which greatly increases the vulnerability of application accounts. However, this feature will be implemented should the TCP Automated Attendance Application ever be used commercially.
+
+Finally, should the user-inputted credentials end up being validated, the user will be presented with the following screen:
+
+![Alt Text](Screenshots/Screenshot_Login_Success.png)
+
+From here, an event queue thread that has been executing in the background; will wait until the synchronized, continue to main screen,  boolean value is changed to true. After this happens it will cause the directory screen to be disposed of, before having the main screen of the application take its place.
 
 ## Account Creation
+A user can access the account creation window by clicking the "Create Account" JButton Component located at the bottom left of the login window screen. Depending on which designation the user has selected on the Directory Screen, a customized Window with different input requirements will appear. The Instructor's Account Creation Screen will appear as follows:
+
+![Alt Text](Screenshots/Screenshot_ACI.png)
+
+Alternatively, the Student's Version of the Account Creation Screen will be displayed as shown:
+
+![Alt Text](Screenshots/Screenshot_ACS.png)
+
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
