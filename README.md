@@ -50,13 +50,13 @@ The **Instructor Link** & the **Student Link** Tables only contain three propert
 
 Records within both tables are automatically deleted should a Student Account be removed from a class or an Instructor Account unlinks their profile from the course. More information about the Instructor course unlinking process can be found in the [Management Course Linking](#Management-Course-Linking) Section.
 
-### Class
+### Class Table
 The Class Table is responsible for holding all of the auxiliary information related to a specific course object entry in the database. These objects were implemented to better group and categorize account profiles within the application. Additionally, they are used during situations when Instructors choose to unlink their account from a particular class while there are still Student Accounts associated with the Course Object. This feature was added in case a scenario such as an Instructor Swapping or Replacement occurs. It is mainly done to preserve the current categorization status of student profiles and their previous Attendance Records.
 
-### Record Date
+### Record Date Table
 The Record Date Table is responsible for holding the individual dates that attendance has been taken for a specific course. There are multiple attendance records per student, class, and day present within the database. Thus, it would be highly inefficient to iterate through every single entry to find the records for a specific student on a given date. This table was installed to increase the application's efficiency by referencing each particular day that the current Instructor marked attendance for. Having these individual dates referenced allows for the database execution thread to quickly find Student Attendance Records associated with the user's chosen date. The date property within the table is a String variable in the format (XX/XX/XXXX). This table is mainly used during the Attendance Records Tab present within the Instructor's version of the Application.
 
-### Attendance Record
+### Attendance Record Table
 The Attendance Record Table is used to hold individual Student Attendance Record Objects which are created each time an instructor marks role in a chosen course. Attendance Record Objects contain seven unique properties which are used to categorize and store information about the statuses and behaviors of Students per class period. 
 
 The ID property is used to reference and differentiate between each separate Attendance Record in the table while the ClassID, StudentID, and InstructorID property fields are used as foreign keys meant to link the current entry to the Class, Student, and Instructor Tables present in the database. The date property is present to link the current attendance record with the date on which it was taken. This date can be found within the Record Date table and is used to promote program efficiency by limiting the record search range.
@@ -100,8 +100,9 @@ The final three message types will simply be triggered should the user attempt t
 
 The rules mentioned above apply to the same types of input fields and conditions found throughout the entire application. They will all trigger a Warning Message Screen which follows the same principles above determined by the type of error occurring. Those errors will either be caused by a lack of input information, data not being verified, or a system error that will cause the aesthetic properties of the current screen to change. Regarding the system error type Warning Message Screens, should a system error occur, such as a failed database retrieval, lost internet connection, or server shutdown, then only a secondary warning message will be displayed upon exiting the window. The input field aesthetics will not be changed.
 
-## Login Screen
-There is currently no penalty for numerous failed login attempts. However, this feature will be added in the next release.
+##
+
+There is currently no penalty for numerous failed login attempts which does affect the security of the application. However, this feature will be added in the next release.
 
 ## Account Creation
 
