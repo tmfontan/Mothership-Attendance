@@ -141,6 +141,20 @@ Upon successfully creating an account, the user will be presented with the scree
 ![Alt Text](Screenshots/Screenshot_AC_Success.png)
 
 ## Welcome Screen
+The welcome screen is presented to a user after a successful login attempt or account creation process. This frame is denoted by a moving fractal GIF background overlayed with an artistic interpretation of Saturn and mountains. The screen shows the current version of the application and gives users a list of notes regarding all of the features, how to use them, and which account designation they are accessible by.
+
+In the current version, the application has five features available for use. These features are the [Profile Customization](#Profile-Customization), [Management](#Management), [Chat Interface](#Chat-Interface), [Attendance Records](#Attendance-Records), and [Attendance Server](#Attendance-Server) Options which will be discussed further in the subsequent sections.
+
+Lastly, the Welcome Screen has an admin button located on the bottom left of the screen which is used to connect with an admin should a problem with the application be found. Seeing as the application is still in the development stage, this button will instead just link to the remote database login web page. This website is only accessible to developers with the correct login credentials. In time, this process will be replaced with an email / online chat functionality.
+
+The Login Screen will appear in the following manners upon first being initialized and loaded in: 
+
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_B.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_C.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+
 ## Profile Customization
 ## Management Tab
 ## Chat Interface
@@ -149,11 +163,6 @@ Upon successfully creating an account, the user will be presented with the scree
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_A.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_B.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_C.png)
-![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_D.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_E.png)
