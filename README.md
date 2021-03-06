@@ -147,7 +147,7 @@ In the current version, the application has five features available for use. The
 
 Lastly, the Welcome Screen has an admin button located on the bottom left of the screen which is used to connect with an admin should a problem with the application be found. Seeing as the application is still in the development stage, this button will instead just link to the remote database login web page. This website is only accessible to developers with the correct login credentials. In time, this process will be replaced with an email / online chat functionality.
 
-The Login Screen will appear in the following manners upon first being initialized and loaded in: 
+The Welcome Screen will appear in the following manners upon first being initialized and loaded in: 
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_B.png)
@@ -156,6 +156,22 @@ The Login Screen will appear in the following manners upon first being initializ
 ![Alt Text](Screenshots/divider_line_neon.png)
 
 ## Profile Customization
+
+The first feature which is provided to both Instructor and Student Accounts is the ability to customize their contact information and profile appearance.
+
+A user can edit their profile by first clicking on the Profile Tab located within the Main Screen window of the application. Upon doing this, the user will be greeted with a screen appearing as follows:
+
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_Profile_A.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_Profile_B.png)
+![Alt Text](Screenshots/divider_line_neon.png)
+
+The first image is of an Instructor Accounts Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its contact fields empty. 
+
+As shown in the images above, the designation will be placed on the screen underneath the profile's display name header. Additionally, Student Accounts will have their student number placed directly next to the designation.
+
+To begin customizing the profile, a user can click the edit profile button located at the bottom of the window.
 ## Management Tab
 ## Chat Interface
 ## Attendance Records
