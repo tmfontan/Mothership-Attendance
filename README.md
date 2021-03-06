@@ -16,6 +16,12 @@ The features mentioned above, and their implementation processes will be explain
 * [Application Start](#Application-Start)
 * [Login Screen](#Login-Screen)
 * [Account Creation](#Account-Creation)
+* [Welcome Screen](#Welcome-Screen)
+* [Profile Customization](#Profile-Customization)
+* [Management](#Management)
+* [Chat Interface](#Chat-Interface)
+* [Attendance Records](#Attendance-Records)
+* [Attendance Server](#Attendance-Server)
 
 A video walkthrough of the Mothership Attendance Application can be found at the following link:
 
@@ -127,21 +133,36 @@ The student's version of the account creation screen also has an additional inpu
 
 The length property required in most of these fields was installed to better defend against cyber attacks. For instance, in a brute force attack, a malicious program will iterate over every possible password combination available after discovering the username to an account. Including uppercase and lowercase letters along with numerical characters, means that every single character within a password can be one of sixty-two possibilities. In terms of probability, that essentially means that a malicious program may have to iterate through 62<sup>11</sup> possible combinations before cracking the password. Even with how far computers have progressed, this process would still take even the fastest computers months if not years to complete. By this time, the password value would have been changed or the person executing the malicious program will have given up to find an easier target.
 
-Should a user attempt to progress through either of the account creation windows before inputting all of the required information or the account creation process fails, it will trigger a customized warning message window that follows the same properties and actions as mentioned in the [Warning Message Screens](#Warning-Message-Screens) Segment.
+Should a user attempt to progress through either of the account creation windows before inputting all of the required information or the account creation process fails, it will trigger a customized warning message window that follows the same properties and actions as mentioned in the
+ [Warning Message Screens](#Warning-Message-Screens) Segment.
 
 Upon successfully creating an account, the user will be presented with the screen below before the background Directory Screen thread disposes of the window and replaces it with a new instance of the Main Screen Window:
 
 ![Alt Text](Screenshots/Screenshot_AC_Success.png)
 
 ## Welcome Screen
+The welcome screen is presented to a user after a successful login attempt or account creation process. This frame is denoted by a moving fractal GIF background overlayed with an artistic interpretation of Saturn and mountains. The screen shows the current version of the application and gives users a list of notes regarding all of the features, how to use them, and which account designation they are accessible by.
 
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_A.png)
+In the current version, the application has five features available for use. These features are the [Profile Customization](#Profile-Customization), [Management](#Management), [Chat Interface](#Chat-Interface), [Attendance Records](#Attendance-Records), and [Attendance Server](#Attendance-Server) Options which will be discussed further in the subsequent sections.
+
+Lastly, the Welcome Screen has an admin button located on the bottom left of the screen which is used to connect with an admin should a problem with the application be found. Seeing as the application is still in the development stage, this button will instead just link to the remote database login web page. This website is only accessible to developers with the correct login credentials. In time, this process will be replaced with an email / online chat functionality.
+
+The Login Screen will appear in the following manners upon first being initialized and loaded in: 
+
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_B.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_C.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
+
+## Profile Customization
+## Management Tab
+## Chat Interface
+## Attendance Records
+## Attendance Server
+
+![Alt Text](Screenshots/divider_line_neon.png)
+![Alt Text](Screenshots/Screenshot_A.png)
 ![Alt Text](Screenshots/Screenshot_D.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_E.png)
