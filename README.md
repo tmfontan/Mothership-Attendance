@@ -23,7 +23,7 @@ The features mentioned above, and their implementation processes will be explain
 * [Attendance Records](#Attendance-Records)
 * [Attendance Server](#Attendance-Server)
 
-<p align="center" style="font-family: 'Times New Roman', sans-serif;">A video Walkthrough of the Mothership Attendance Application can be found at the following link:</p>
+<p align="center" style="color: red;">A video Walkthrough of the Mothership Attendance</p>
 
 <p align="center">
  <a href="https://youtu.be/7Z4EQI0jJ98"><img src="Screenshots/Youtube_Link.png" alt="Youtube_Link"/></a>
