@@ -90,13 +90,17 @@ Upon starting the application, users are first greeted with an introductory scre
 
 Users will then be shown a directory screen that provides a small set of instructions and allows them to choose between one of two separate designations. Individuals can choose to continue either as an “Instructor” or “Student” account by clicking the corresponding JButton Components. A user can then choose to either log in with a preexisting account or create a new profile via the "Create Account" JButton displayed at the bottom of the login screen. The image below shows how this directory segment of the application will appear:
 
+<br>
+<br>
 <p align="center">
  <img src="Screenshots/Screenshot_3.png" width="80%" alt="Application Startup"/>
 </p>
+<br>
 
 ## Login Screen
 During the login process, the application will authenticate the user-specified username and password values via a remote database search. Should the specified password value fail to match, or the defined username isn’t found, then the application will display a customized warning message that explains why the login process has failed. The login screen will appear the same way regardless of which designation button the user has clicked. The series of images below display how the login window will appear in addition to one of the few Warning Message Screens and how it will subsequently alter the aesthetic appearance of the GUI:
 
+<br>
 <br>
 <p align="center">
  <img src="Screenshots/Screenshot_4.png" width="80%" alt="Application Startup"/>
@@ -127,6 +131,7 @@ There is currently no penalty for numerous failed login attempts which greatly i
 Finally, should the user-inputted credentials end up being validated, the user will be presented with the following screen:
 
 <br>
+<br>
 <p align="center">
  <img src="Screenshots/Screenshot_Login_Success.png" width="80%" alt="Application Startup"/>
 </p>
@@ -138,6 +143,7 @@ During this time; there is an event queue thread, separate from the main thread,
 A user can access the account creation window by clicking the "Create Account" JButton Component located at the bottom left of the login window screen. A custom account creation window will then appear which takes the place of the current login screen instance. The Account Creation Screen will be tailored differently depending on which designation the user has selected. The Instructor's version of the window will ask users to input seven different values of identification data while the Student's version will require eight. The Instructor's version of the Account Creation Screen will appear as follows:
 
 <br>
+<br>
 <p align="center">
  <img src="Screenshots/Screenshot_ACI.png" width="80%" alt="Application Startup"/>
 </p>
@@ -145,6 +151,7 @@ A user can access the account creation window by clicking the "Create Account" J
 
 Alternatively, the Student's Version of the Account Creation Screen will be displayed as shown:
 
+<br>
 <br>
 <p align="center">
  <img src="Screenshots/Screenshot_ACS.png" width="80%" alt="Application Startup"/>
@@ -159,11 +166,11 @@ The student's version of the account creation screen also has an additional inpu
 
 The length property required in most of these fields was installed to better defend against cyber attacks. For instance, in a brute force attack, a malicious program will iterate over every possible password combination available after discovering the username to an account. Including uppercase and lowercase letters along with numerical characters, means that every single character within a password can be one of sixty-two possibilities. In terms of probability, that essentially means that a malicious program may have to iterate through 62<sup>11</sup> possible combinations before cracking the password. Even with how far computers have progressed, this process would still take even the fastest computers months if not years to complete. By this time, the password value would have been changed or the person executing the malicious program will have given up to find an easier target.
 
-Should a user attempt to progress through either of the account creation windows before inputting all of the required information or the account creation process fails, it will trigger a customized warning message window that follows the same properties and actions as mentioned in the
- [Warning Message Screens](#Warning-Message-Screens) Segment.
+Should a user attempt to progress through either of the account creation windows before inputting all of the required information or the account creation process fails, it will trigger a customized warning message window that follows the same properties and actions as mentioned in the [Warning Message Screens](#Warning-Message-Screens) Segment.
 
 Upon successfully creating an account, the user will be presented with the screen below before the background Directory Screen thread disposes of the window and replaces it with a new instance of the Main Screen Window:
 
+<br>
 <br>
 <p align="center">
  <img src="Screenshots/Screenshot_AC_Success.png" width="80%" alt="Application Startup"/>
