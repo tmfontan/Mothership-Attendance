@@ -11,6 +11,8 @@ Mothership Attendance is a Java Swing / AWT application that functions as an aut
 
 The features mentioned above, and their implementation processes will be explained in depth further within the report. If you wish to skip to a particular section, please click on the corresponding link below in the table of contents:
 
+![Alt Text](Screenshots/Image_A.svg)
+
 #### Table of Contents
 * [Database Implementation](#Database-Implementation)
 * [Application Start](#Application-Start)
