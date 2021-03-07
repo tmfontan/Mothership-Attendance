@@ -2,7 +2,7 @@
 
 ![Alt Text](Screenshots/Social_Media_Image.jpg)
 
-Mothership Attendance is a Java Swing / AWT application that functions as an attendance recording tool for a group of custom-created attendee accounts. Other than the previously mentioned process, the application also gives user’s access to four separate features depending on their selected account type. A list of these additional features is provided below:
+Mothership Attendance is a Java Swing / AWT application that functions as an automated, attendance recording tool for a group of custom-created attendee accounts. Other than the previously mentioned process, the application also gives user’s access to four separate features depending on their selected account type. A list of these additional features is provided below:
 
 *	Profile Customization
 *	Course Creation / Management
@@ -156,10 +156,7 @@ The Welcome Screen will appear in the following manners upon first being initial
 ![Alt Text](Screenshots/divider_line_neon.png)
 
 ## Profile Customization
-
-The first feature which is provided to both Instructor and Student Accounts is the ability to customize their contact information and profile appearance.
-
-A user can edit their profile by first clicking on the Profile Tab located within the Main Screen window of the application. Upon doing this, the user will be greeted with a screen appearing as follows:
+The first feature which is provided to both Instructor and Student Accounts is the ability to customize their contact information and profile appearance. A user can edit their profile by first clicking on the Profile Tab located in the top left of the Main Screen window. After doing this, the user will be greeted with some variation of the following images:
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_Profile_A.png)
@@ -167,11 +164,32 @@ A user can edit their profile by first clicking on the Profile Tab located withi
 ![Alt Text](Screenshots/Screenshot_Profile_B.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 
-The first image is of an Instructor Accounts Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its contact fields empty. 
+The first image is of an Instructor Account's Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its personal information fields empty. Users can choose to add a profile picture, phone number, physical address, and biography value to their profile. As seen in the first image above, these values will be displayed underneath the Display Name heading shown at the top of the window. The newly chosen profile image will replace the temporary image shown next to the Display Name. 
 
-As shown in the images above, the designation will be placed on the screen underneath the profile's display name header. Additionally, Student Accounts will have their student number placed directly next to the designation.
+(Note: The Display Name value is a static string that is a combination of the user's first and last names. It cannot be changed or altered.) 
 
-To begin customizing the profile, a user can click the edit profile button located at the bottom of the window.
+Currently, these informational segments are only visible to the user's profile. However, certain pieces of the information will be visible to both other Instructor and Student Accounts in a later release. As shown in the images above, the account's designation will be placed on the screen underneath the profile's display name heading. Additionally, Student Accounts will have their StudentID placed directly next to the designation.
+
+To begin customizing the profile, a user can click the edit profile button located at the bottom of the window. From here, the user will be greeted with a variant of the following screen:
+
+![Alt Text](Screenshots/Screenshot_Profile_C.png)
+
+To edit information on the screen, a user just needs to click on the default or current text shown. This will replace the current JLabel Component, which contains either the default or current text value, with the JTextField Component located beneath. The user's mouse will automatically be focused inside the text field which will contain the same default or custom text value. This process will appear as follows and applies for the email, phone number, address, and biography property fields:
+
+![Alt Text](Screenshots/Screenshot_Profile_D.png)
+
+If an input field either contains the values " " or "Default", then it will automatically be deleted upon having the text field gain focus. The "Default" value will then reappear should the user exit from the input field without entering any information.
+
+The phone number text field is what's known as a formatted field. This means that the box will only accept a ten-character numerical argument which is automatically placed inside the format (XXX) - XXX - XXXX. Unlike the plain text fields previously shown in the project, this component is automatically created with a set of rules. They don't need to be defined such as the StudentID numerical range or email character restriction during the Account Creation process.
+
+If a user wishes to change their current or the default profile picture selection, they first begin by clicking on the actual picture within the window. This will spawn the following window:
+
+![Alt Text](Screenshots/Screenshot_Profile_E.png)
+
+A user can select one of the thirty additional images as their profile picture. Upon clicking a picture, a JLabel will appear displaying the name of the image and the "Confirm" JButton will be accessible. Once a user selects the profile image that they want, they can click the "Confirm" JButton to exit from the window. This will update the profile picture in the previous window but not implement the change yet.
+
+Once the user has finished customizing their profile, they can click the open lock picture located at the bottom left of the screen. This will save the changes made to the user's profile, updating the information within the main screen along with sending the change to the remote database. Clicking on the lock will replace it with an image of a closed lock, also stoping the user from being able to further edit the information. If the user wants to continue editing the information, they can simply re-click on the lock to re-enable all of the fields.
+
 ## Management Tab
 ## Chat Interface
 ## Attendance Records
