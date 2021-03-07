@@ -25,6 +25,10 @@ The features mentioned above, and their implementation processes will be explain
 
 A video walkthrough of the Mothership Attendance Application can be found at the following link:
 
+<p align="center">
+ <a href="https://youtu.be/7Z4EQI0jJ98"><img src="Screenshots/Youtube_Link.png" alt="Youtube_Link"/></a>
+</p>
+
 [![Mothership Attendance Walkthrough](Screenshots/Youtube_Link.png)](https://youtu.be/7Z4EQI0jJ98)
 
 ## Database Implementation
