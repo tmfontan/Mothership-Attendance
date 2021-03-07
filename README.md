@@ -174,6 +174,22 @@ To begin customizing the profile, a user can click the edit profile button locat
 
 ![Alt Text](Screenshots/Screenshot_Profile_C.png)
 
+To edit information on the screen, a user just needs to click on the default or current text shown. This will replace the current JLabel Component, which contains either the default or current text value, with the JTextField Component located beneath. The user's mouse will automatically be focused inside the text field which will contain the same default or custom text value. This process will appear as follows and applies for the email, phone number, address, and biography property fields:
+
+![Alt Text](Screenshots/Screenshot_Profile_D.png)
+
+If an input field either contains the values " " or "Default", then it will automatically be deleted upon having the text field gain focus. The "Default" value will then reappear should the user exit from the input field without entering any information.
+
+The phone number text field is what's known as a formatted field. This means that the box will only accept a ten-character numerical argument which is automatically placed inside the format (XXX) - XXX - XXXX. Unlike the plain text fields previously shown in the project, this component is automatically created with a set of rules. They don't need to be defined such as the StudentID numerical range or email character restriction during the Account Creation process.
+
+If a user wishes to change their current or the default profile picture selection, they first begin by clicking on the actual picture within the window. This will spawn the following window:
+
+![Alt Text](Screenshots/Screenshot_Profile_E.png)
+
+A user can select one of the thirty additional images as their profile picture. Upon clicking a picture, a JLabel will appear displaying the name of the image and the "Confirm" JButton will be accessible. Once a user selects the profile image that they want, they can click the "Confirm" JButton to exit from the window. This will update the profile picture in the previous window but not implement the change yet.
+
+Once the user has finished customizing their profile, they can click the open lock picture located at the bottom left of the screen. This will save the changes made to the user's profile, updating the information within the main screen along with sending the change to the remote database. Clicking on the lock will replace it with an image of a closed lock, also stoping the user from being able to further edit the information. If the user wants to continue editing the information, they can simply re-click on the lock to re-enable all of the fields.
+
 ## Management Tab
 ## Chat Interface
 ## Attendance Records
