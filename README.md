@@ -76,8 +76,8 @@ The final property, comments, is used to store a fixed-length string containing 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead synchronized variable classes which it will need for the main screen of the application to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application will appear during this portion:
 
-<p align="center" width="200px">
- <img src="Screenshots/Screenshot_1.png" alt="Application Startup"/>
+<p align="center">
+ <img src="Screenshots/Screenshot_1.png" width="80%" alt="Application Startup"/>
 </p>
 
 ![Alt Text](Screenshots/divider_line_neon.png)
