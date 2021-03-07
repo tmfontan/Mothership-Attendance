@@ -2,7 +2,7 @@
 
 ![Alt Text](Screenshots/Social_Media_Image.jpg)
 
-Mothership Attendance is a Java Swing / AWT application that functions as an attendance recording tool for a group of custom-created attendee accounts. Other than the previously mentioned process, the application also gives user’s access to four separate features depending on their selected account type. A list of these additional features is provided below:
+Mothership Attendance is a Java Swing / AWT application that functions as an automated, attendance recording tool for a group of custom-created attendee accounts. Other than the previously mentioned process, the application also gives user’s access to four separate features depending on their selected account type. A list of these additional features is provided below:
 
 *	Profile Customization
 *	Course Creation / Management
@@ -156,10 +156,7 @@ The Welcome Screen will appear in the following manners upon first being initial
 ![Alt Text](Screenshots/divider_line_neon.png)
 
 ## Profile Customization
-
-The first feature which is provided to both Instructor and Student Accounts is the ability to customize their contact information and profile appearance.
-
-A user can edit their profile by first clicking on the Profile Tab located within the Main Screen window of the application. Upon doing this, the user will be greeted with a screen appearing as follows:
+The first feature which is provided to both Instructor and Student Accounts is the ability to customize their contact information and profile appearance. A user can edit their profile by first clicking on the Profile Tab located in the top left of the Main Screen window. After doing this, the user will be greeted with some variation of the following images:
 
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_Profile_A.png)
@@ -167,11 +164,16 @@ A user can edit their profile by first clicking on the Profile Tab located withi
 ![Alt Text](Screenshots/Screenshot_Profile_B.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 
-The first image is of an Instructor Accounts Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its contact fields empty. 
+The first image is of an Instructor Account's Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its personal information fields empty. Users can choose to add a profile picture, phone number, physical address, and biography value to their profile. As seen in the first image above, these values will be displayed underneath the Display Name heading shown at the top of the window. The newly chosen profile image will replace the temporary image shown next to the Display Name. 
 
-As shown in the images above, the designation will be placed on the screen underneath the profile's display name header. Additionally, Student Accounts will have their student number placed directly next to the designation.
+(Note: The Display Name value is a static string that is a combination of the user's first and last names. It cannot be changed or altered.) 
 
-To begin customizing the profile, a user can click the edit profile button located at the bottom of the window.
+Currently, these informational segments are only visible to the user's profile. However, certain pieces of the information will be visible to both other Instructor and Student Accounts in a later release. As shown in the images above, the account's designation will be placed on the screen underneath the profile's display name heading. Additionally, Student Accounts will have their StudentID placed directly next to the designation.
+
+To begin customizing the profile, a user can click the edit profile button located at the bottom of the window. From here, the user will be greeted with a variant of the following screen:
+
+![Alt Text](Screenshots/Screenshot_Profile_C.png)
+
 ## Management Tab
 ## Chat Interface
 ## Attendance Records
