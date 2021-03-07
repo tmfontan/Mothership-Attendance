@@ -18,7 +18,7 @@
                 }
             </style>
             <div class="image_container">
-                <img src="Screenshots/Youtube_Link.png" height="400" width="400"/>
+                <img href="https://github.com/tmfontan/TCPSocketAutomatedAttendance/blob/main/Screenshots/Youtube_Link.png" src="https://github.com/tmfontan/TCPSocketAutomatedAttendance/blob/main/Screenshots/Youtube_Link.png" height="400" width="400"/>
             </div>
         </div>
     </foriegnObject>
