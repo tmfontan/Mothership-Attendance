@@ -23,7 +23,7 @@ The features mentioned above, and their implementation processes will be explain
 * [Attendance Records](#Attendance-Records)
 * [Attendance Server](#Attendance-Server)
 
-<p align="center">A Video Walkthrough of the Mothership Attendance<br>Application can be found at the following link</p>
+<p align="center">A Video Walkthrough of the Mothership Attendance<br>Application can be found at the following link:</p>
 
 <p align="center">
  <a href="https://youtu.be/7Z4EQI0jJ98"><img src="Screenshots/Youtube_Link.png" alt="Youtube_Link"/></a>
@@ -76,10 +76,11 @@ The final property, comments, is used to store a fixed-length string containing 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead synchronized variable classes which it will need for the main screen of the application to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application will appear during this portion:
 
-![Alt Text](Screenshots/divider_line_neon.png)
 <p align="center" width="80%">
- <img src="Screenshots/Screenshot_1.png" alt="Screenshot 1"/>
+ <img src="Screenshots/Screenshot_1.png" alt="Application Startup"/>
 </p>
+
+![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_1.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 ![Alt Text](Screenshots/Screenshot_2.png)
