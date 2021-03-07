@@ -76,6 +76,8 @@ The final property, comments, is used to store a fixed-length string containing 
 
 ## Application Start
 Upon starting the application, users are first greeted with an introductory screen that displays both a progress bar and the project’s logo. The progress bar will continuously load while the application creates instances of certain overhead synchronized variable classes which it will need for the main screen of the application to function. While this occurs, a GIF image displaying multiple nature-scenic images will loop in the background until the current instance of the application has finished its preparation. The figures below show how the application will appear during this portion:
+
+<br>
 <br>
 <p align="center">
  <img src="Screenshots/Screenshot_1.png" width="80%" alt="Application Startup"/>
@@ -284,37 +286,3 @@ The most important part of the Update Class Information Interface is related to 
 ## Chat Interface
 ## Attendance Records
 ## Attendance Server
-
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_A.png)
-![Alt Text](Screenshots/Screenshot_D.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_E.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_F.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_G.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_H.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_I.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_J.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_K.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_L.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_M.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_N.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_O.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_P.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_Q.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_R.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_T.png)
