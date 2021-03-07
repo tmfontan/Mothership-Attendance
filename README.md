@@ -23,13 +23,11 @@ The features mentioned above, and their implementation processes will be explain
 * [Attendance Records](#Attendance-Records)
 * [Attendance Server](#Attendance-Server)
 
-A video walkthrough of the Mothership Attendance Application can be found at the following link:
+<p align="center" style="font-family: 'Times New Roman', sans-serif;">A video Walkthrough of the Mothership Attendance Application can be found at the following link:</p>
 
 <p align="center">
  <a href="https://youtu.be/7Z4EQI0jJ98"><img src="Screenshots/Youtube_Link.png" alt="Youtube_Link"/></a>
 </p>
-
-[![Mothership Attendance Walkthrough](Screenshots/Youtube_Link.png)](https://youtu.be/7Z4EQI0jJ98)
 
 ## Database Implementation
 This application uses a remote database connection in conjunction with [MySQL](https://www.mysql.com/) to catalog progress from previous user sessions. The remote database is hosted by the online service [myPHPAdmin](https://www.phpmyadmin.net/) and is composed of seven separate tables. The ER Diagram below displays the names and property values of each table within the database and how they correlate to each other:
