@@ -79,18 +79,16 @@ Upon starting the application, users are first greeted with an introductory scre
 <p align="center">
  <img src="Screenshots/Screenshot_1.png" width="80%" alt="Application Startup"/>
 </p>
-
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_1.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_2.png)
-![Alt Text](Screenshots/divider_line_neon.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_2.png" width="80%" alt="Application Startup"/>
+</p>
 
 Users will then be shown a directory screen that provides a small set of instructions and allows them to choose between one of two separate designations. Individuals can choose to continue either as an “Instructor” or “Student” account by clicking the corresponding JButton Components. A user can then choose to either log in with a preexisting account or create a new profile via the "Create Account" JButton displayed at the bottom of the login screen. The image below shows how this directory segment of the application will appear:
 
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_3.png)
-![Alt Text](Screenshots/divider_line_neon.png)
+<p align="center">
+ <img src="Screenshots/Screenshot_3.png" width="80%" alt="Application Startup"/>
+</p>
 
 ## Login Screen
 During the login process, the application will authenticate the user-specified username and password values via a remote database search. Should the specified password value fail to match, or the defined username isn’t found, then the application will display a customized warning message that explains why the login process has failed. The login screen will appear the same way regardless of which designation button the user has clicked. The series of images below display how the login window will appear in addition to one of the few Warning Message Screens and how it will subsequently alter the aesthetic appearance of the GUI:
