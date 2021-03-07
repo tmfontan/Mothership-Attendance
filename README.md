@@ -199,7 +199,7 @@ The Management Tab is a feature only available to Instructor Accounts that allow
 
 ![Alt Text](Screenshots/Screenshot_Management_A.png)
 
-A user can then select an item from the Drop Down Menu to access each of the different functionalities. After selecting one of the options, the user will click the go button to show the functionalities interface. In case the user forgets, there is a small reminder shown above the menu which explains the process.
+A user can then select an item from the Drop Down Menu to access each of the different functionalities. After selecting one of the options, the user will click the go button to show the functionalities interface. In case the user forgets, there is a small reminder shown above the menu which explains the process:
 
 ![Alt Text](Screenshots/Screenshot_Management_B.png)
 
@@ -210,9 +210,48 @@ The Create New Class Functionality is used to create a new Class or "Course" tab
 
 ![Alt Text](Screenshots/Screenshot_Management_C.png)
 
-As seen in the image below, new course objects require multiple pieces of input information before being created. The new course object must contain a Title, Field, Number, Type, Section, Semester, Year, and Credit Hour Amount. Additionally, the new object must contain a specified amount of participants (Max Number of Students Enrolled in Class) and can also contain but doesn't require a description. The reason for this feature will be explained later in the Attendance Server Section. This data structure is modeled after a realistic course entry in a University Database and is used to help both the application and user better differentiate between individual class objects. 
+As seen in the image below, new course objects require multiple pieces of input information before being created. The new course object must contain a Title, Field, Number, Type, Section, Semester, Year, and Credit Hour Amount. Additionally, the new object must contain a specified amount of participants (Max Number of Students Enrolled in Class) and can also contain but doesn't require a description. The reason for this feature will be explained later in [Update Class Information](#Update-Class-Information) Section. This data structure is modeled after a realistic course entry in a University Database and is used to help both the application and user better differentiate between individual class objects. 
 
 To better categorize the course object information in the database, most of the property fields are presented to the user in the form of drop-down menus. This is done so that there is no variation in the information which stops the program from wasting additional effort in forming comparison conditions. Essentially, it will speeds up the writing and reading processes from the database and improve overall program efficiency.
+
+Finally, an Instructor must decide whether or not they wish to link the new course to their account. If the course is linked to the instructor's account, then it means that they can implement changes to the course at a later point in the form of editing the course's information, deleting it, and managing the students currently enrolled. The user can choose to link the course to their account via clicking the checkmark to the right of the "Link Class to Account?" JLabel Component:
+
+![Alt Text](Screenshots/Screenshot_Management_E.png)
+
+Finally, a user can click the "Create" JButton Component located under the Description box to create the new course. A small circling GIF Image will appear while the new object is being written and all of the input fields will be disabled while the new object is being written to the database. Once this process finishes, all of the input fields will be reset to their original default values and the user will be presented with some variation of the following screen:
+
+![Alt Text](Screenshots/Screenshot_Management_F.png)
+
+At this point, the user can choose to either continue making new classes or move on to a different part of the application.
+
+### Update Class Information
+The Update Class Information functionality is used to edit the information of a pre-existing course object that is already linked to the current Instructor's Account. This functionality can be accessed in the same manner as the [Create New Class](#Create-New-Class) functionality from within the Management Screen Tab. The interface for the Update Class Information Functionality will initially appear as follows:
+
+![Alt Text](Screenshots/Screenshot_Management_G.png)
+
+As seen above, the user will be presented with a JLabel containing instructions, a drop-down menu, and two button components. The drop-down menu will automatically be loaded with a list of the courses associated with, or "linked", to the current Instructor's account. This list of courses is automatically retrieved from the database and uploaded to each corresponding drop-down menu when the Welcome Screen is being loaded in. Furthermore, each drop-down menu within the application that uses the information, is updated every time the user creates a new class object and links it to his or her account. 
+
+The green "Refresh" button is used in case the previously mentioned process fails:
+
+![Alt Text](Screenshots/Screenshot_Management_H.png)
+
+Clicking this button will cause all of the visible components in the Update Class Information functionality to be disabled while a background thread retrieves an updated list of the associated classes. During this time, the user can continue navigating around the Main Screen without any penalty. Once the process has finished, the drop-down menu will be updated with a list of the currently associated class and the components will be re-enabled for user interaction. These "Refresh" Buttons are available in all parts of the application where a drop-down menu is composed of dynamic data retrieved from the database.
+
+If an Instructor Account is linked to multiple courses using the same Class Title (i.e "Calculus I" or "Physics II"), then the course will automatically be displayed using additional information. This is done so that both the user and the program can better differentiate between the two or more courses using the same title. An example of this technicality in action is shown below:
+
+![Alt Text](Screenshots/Screenshot_Management_D.png)
+
+Once a user has selected one of their associated courses, they can click the "Go" JButton Component to load in the class's information. This will spawn a nearly exact replica of the "Create New Class" interface. However, this interface will already have the chosen course's information loaded into its input fields in addition to an additional button located towards the bottom of the screen. The new segment of the Update Class Information Functionality will appear as follows:
+
+![Alt Text](Screenshots/Screenshot_Management_I.png)
+
+As shown in the image above, the current course's data properties will already be set inside of their corresponding fields. The text fields will automatically be set with the number or string data values contained in the class object while the static drop-down menus will all be set to the indexes corresponding with the saved info. From here, the user can edit the course properties in whatever manner they want. However, each input field must contain a custom response before attempting to save the changes. No field may be left with a blank or default answer/selection, or the interface will spawn a new Warning Message Screen to alert the user. The only field that can be left blank on the page is the course description.
+
+After finalizing the new course information, the user can push the changes through via the "Update" button located towards the bottom of the form. This will disable all of the components and show a loading GIF Image until the background, database update process has finished. Once the process has been successfully executed, all of the components will be re-enabled for user interaction. If a user wishes to return to the first part of the interface, where they were able to select a course to edit, then they can click on the small blue backward arrow button at the bottom of the form. This will bring them back to the original part of the interface and reset all components within the interface to their default values.
+
+The most important part of the Update Class Information Interface is related to the checkbox component located to the right of the "Class Linked to Account:" JLabel. Unchecking this box will unlink the currently chosen class from the Instructor's Account. This means that the Instructor will no longer be able to edit the course objects information or mark attendance for the Students within that class. The course listing will be removed from every dynamic drop-down menu in the application. This feature was installed in the case of an Instructor no longer being able to teach a course. When the checkbox is un-clicked, the course then becomes an "Un-associated Class" which is capable of being picked up by a different Instructor Account. This process preserves the course's connection with the list of students currently enrolled in addition to saving all of their previous attendance records. In the current version of the application, "Un-Associated Classes" can be picked up by any Instructor Account. However, additional security features regarding this feature will be installed in later versions of the application.
+
+### Delete Class
 
 ## Chat Interface
 ## Attendance Records
