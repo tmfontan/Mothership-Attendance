@@ -164,11 +164,9 @@ The first feature which is provided to both Instructor and Student Accounts is t
 ![Alt Text](Screenshots/Screenshot_Profile_B.png)
 ![Alt Text](Screenshots/divider_line_neon.png)
 
-The first image is of an Instructor Account's Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its personal information fields empty. Users can choose to add a profile picture, phone number, physical address, and biography value to their profile. As seen in the first image above, these values will be displayed underneath the Display Name heading shown at the top of the window. The newly chosen profile image will replace the temporary image shown next to the Display Name. 
+The first image is of an Instructor Account's Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its personal information fields empty. Users can choose to add a profile picture, phone number, physical address, and biography information to their profile. As seen in the first image above, these values will be displayed underneath the Display Name heading shown at the top of the window. The newly chosen profile image will replace the temporary image shown next to the Display Name. 
 
-(Note: The Display Name value is a static string that is a combination of the user's first and last names. It cannot be changed or altered.) 
-
-Currently, these informational segments are only visible to the user's profile. However, certain pieces of the information will be visible to both other Instructor and Student Accounts in a later release. As shown in the images above, the account's designation will be placed on the screen underneath the profile's display name heading. Additionally, Student Accounts will have their StudentID placed directly next to the designation.
+Currently, these informational segments are only visible to the user's profile. However, certain pieces of the information will be visible to both other Instructor and Student Accounts in a later release via the Attendance Server Function. As shown in the images above, the account's designation will be placed on the screen underneath the profile's display name heading. Additionally, Student Accounts will have their StudentID placed directly next to the designation.
 
 To begin customizing the profile, a user can click the edit profile button located at the bottom of the window. From here, the user will be greeted with a variant of the following screen:
 
@@ -176,11 +174,13 @@ To begin customizing the profile, a user can click the edit profile button locat
 
 To edit information on the screen, a user just needs to click on the default or current text shown. This will replace the current JLabel Component, which contains either the default or current text value, with the JTextField Component located beneath. The user's mouse will automatically be focused inside the text field which will contain the same default or custom text value. This process will appear as follows and applies for the email, phone number, address, and biography property fields:
 
+(Note: The Display Name value is a static string that is a combination of the user's first and last names. It cannot be changed or altered.) 
+
 ![Alt Text](Screenshots/Screenshot_Profile_D.png)
 
 If an input field either contains the values " " or "Default", then it will automatically be deleted upon having the text field gain focus. The "Default" value will then reappear should the user exit from the input field without entering any information.
 
-The phone number text field is what's known as a formatted field. This means that the box will only accept a ten-character numerical argument which is automatically placed inside the format (XXX) - XXX - XXXX. Unlike the plain text fields previously shown in the project, this component is automatically created with a set of rules. They don't need to be defined such as the StudentID numerical range or email character restriction during the Account Creation process.
+The phone number text field is what's known as a formatted field. This means that the box will only accept a ten-character numerical argument which is automatically placed inside the format (XXX) - XXX - XXXX. Unlike the plain text fields previously shown in the project, this component is automatically created with a set of rules. They don't need to be defined such as the StudentID numerical range or email character restriction that was implemented during the Account Creation process.
 
 If a user wishes to change their current or the default profile picture selection, they first begin by clicking on the actual picture within the window. This will spawn the following window:
 
@@ -188,9 +188,14 @@ If a user wishes to change their current or the default profile picture selectio
 
 A user can select one of the thirty additional images as their profile picture. Upon clicking a picture, a JLabel will appear displaying the name of the image and the "Confirm" JButton will be accessible. Once a user selects the profile image that they want, they can click the "Confirm" JButton to exit from the window. This will update the profile picture in the previous window but not implement the change yet.
 
-Once the user has finished customizing their profile, they can click the open lock picture located at the bottom left of the screen. This will save the changes made to the user's profile, updating the information within the main screen along with sending the change to the remote database. Clicking on the lock will replace it with an image of a closed lock, also stoping the user from being able to further edit the information. If the user wants to continue editing the information, they can simply re-click on the lock to re-enable all of the fields.
+Once the user has finished customizing their profile, they can click the open lock picture located at the bottom left of the screen. This will save the changes made to the user's profile, updating the information within the main window along with sending the changes to the remote database. Clicking on the lock will replace it with an image of a closed lock, also stoping the user from being able to further edit the information. If the user wants to continue editing the information, they can simply re-click the lock image to re-enable all of the input fields for modification.
+
+When normally dealing with graphical user interfaces, one of the most aggravating challenges deals with the scaleability of text. In other words, what happens should the user's chosen text value be larger than the bounds of its container component? Will the bounds of the component automatically be resized upon receiving input larger than its current pixel width, or will the specified text expand past the current frame's viewport? This is one of the many issues that designers and developers face during the creation of user interfaces. Input field properties such as font family and size also contribute to this issue. 
+
+To solve this issue, the program uses a static Java Class, CreateImageFromText, which contains two methods that are called according to the font family being used. Each method accepts four arguments which are the current input value, container width, container height, and font size. The methods use these parameters to calculate the current pixel width of the text according to the font being used. Should the pixel width be longer than the viewport size, the font size is continuously decremented until its pixel width is less than the overall container's width. These methods are only called on the Display Name and Physical Address Fields on the main profile window. This is done seeing as the Phone Number Field will always be a fixed-length input that doesn't need to be resized and the Biography input value is wrapped in JTextArea component. JTextAreas implement a scrolling function that allows users to enter as much input text as they want without occupying additional space on the screen or extending the container's size. This component is used in multiple other segments of the main application.
 
 ## Management Tab
+
 ## Chat Interface
 ## Attendance Records
 ## Attendance Server
