@@ -186,20 +186,28 @@ Lastly, the Welcome Screen has an admin button located on the bottom left of the
 
 The Welcome Screen will appear in the following manners upon first being initialized and loaded in: 
 
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_B.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_C.png)
-![Alt Text](Screenshots/divider_line_neon.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_B.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_C.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 ## Profile Customization
 The first feature which is provided to both Instructor and Student Accounts is the ability to customize their contact information and profile appearance. A user can edit their profile by first clicking on the Profile Tab located in the top left of the Main Screen window. After doing this, the user will be greeted with some variation of the following images:
 
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_Profile_A.png)
-![Alt Text](Screenshots/divider_line_neon.png)
-![Alt Text](Screenshots/Screenshot_Profile_B.png)
-![Alt Text](Screenshots/divider_line_neon.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Profile_A.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Profile_B.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 The first image is of an Instructor Account's Profile which has already been customized and filled with dummy data. The second image is of a recently created Student Account that still has all of its personal information fields empty. Users can choose to add a profile picture, phone number, physical address, and biography information to their profile. As seen in the first image above, these values will be displayed underneath the Display Name heading shown at the top of the window. The newly chosen profile image will replace the temporary image shown next to the Display Name. 
 
@@ -207,13 +215,21 @@ Currently, these informational segments are only visible to the user's profile. 
 
 To begin customizing the profile, a user can click the edit profile button located at the bottom of the window. From here, the user will be greeted with a variant of the following screen:
 
-![Alt Text](Screenshots/Screenshot_Profile_C.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Profile_C.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 To edit information on the screen, a user just needs to click on the default or current text shown. This will replace the current JLabel Component, which contains either the default or current text value, with the JTextField Component located beneath. The user's mouse will automatically be focused inside the text field which will contain the same default or custom text value. This process will appear as follows and applies for the email, phone number, address, and biography property fields:
 
 (Note: The Display Name value is a static string that is a combination of the user's first and last names. It cannot be changed or altered.) 
 
-![Alt Text](Screenshots/Screenshot_Profile_D.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Profile_D.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 If an input field either contains the values " " or "Default", then it will automatically be deleted upon having the text field gain focus. The "Default" value will then reappear should the user exit from the input field without entering any information.
 
@@ -221,7 +237,11 @@ The phone number text field is what's known as a formatted field. This means tha
 
 If a user wishes to change their current or the default profile picture selection, they first begin by clicking on the actual picture within the window. This will spawn the following window:
 
-![Alt Text](Screenshots/Screenshot_Profile_E.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Profile_E.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 A user can select one of the thirty additional images as their profile picture. Upon clicking a picture, a JLabel will appear displaying the name of the image and the "Confirm" JButton will be accessible. Once a user selects the profile image that they want, they can click the "Confirm" JButton to exit from the window. This will update the profile picture in the previous window but not implement the change yet.
 
@@ -234,18 +254,30 @@ To solve this issue, the program uses a static Java Class, CreateImageFromText, 
 ## Management Tab
 The Management Tab is a feature only available to Instructor Accounts that allows users to manage and organize student enrollment. The Management Tab currently gives Instructors access to five different functions which are the Create New Class, Update Class Information, Delete Class, Link Un-Associated Classes, and Manage Student Access process. Each of these processes are capable of sending permanent changes to the database and affects the program functionality of other Student and Instructor Accounts; thus potential changes should first be approved through upper management before being implemented. The Management Screen Tab will first appear as follows on new instances of Instructor Accounts:
 
-![Alt Text](Screenshots/Screenshot_Management_A.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_A.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 A user can then select an item from the Drop Down Menu to access each of the different functionalities. After selecting one of the options, the user will click the go button to show the functionalities interface. In case the user forgets, there is a small reminder shown above the menu which explains the process:
 
-![Alt Text](Screenshots/Screenshot_Management_B.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_B.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 After selecting an option and clicking the "Go" Button, the chosen functionality's interface will be shown in the hexagonal rectangle below.
 
 ### Create New Class
 The Create New Class Functionality is used to create a new Class or "Course" table entry within the remote database. As previously mentioned, courses are used to better categorize student accounts within the application and improve overall program efficiency. By linking a smaller group of student accounts to a single object, we are limiting the number of accounts that the database thread needs to iterate through to find the target account's information. Additionally, this allows the database thread to form lists of students and initiate changes on multiple pieces of information quicker. Upon loading in this functionality, the user will be greeted with the following screen:
 
-![Alt Text](Screenshots/Screenshot_Management_C.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_C.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 As seen in the image below, new course objects require multiple pieces of input information before being created. The new course object must contain a Title, Field, Number, Type, Section, Semester, Year, and Credit Hour Amount. Additionally, the new object must contain a specified amount of participants (Max Number of Students Enrolled in Class) and can also contain but doesn't require a description. The reason for this feature will be explained later in [Update Class Information](#Update-Class-Information) Section. This data structure is modeled after a realistic course entry in a University Database and is used to help both the application and user better differentiate between individual class objects. 
 
@@ -253,34 +285,58 @@ To better categorize the course object information in the database, most of the 
 
 Finally, an Instructor must decide whether or not they wish to link the new course to their account. If the course is linked to the instructor's account, then it means that they can implement changes to the course at a later point in the form of editing the course's information, deleting it, and managing the students currently enrolled. The user can choose to link the course to their account via clicking the checkmark to the right of the "Link Class to Account?" JLabel Component:
 
-![Alt Text](Screenshots/Screenshot_Management_E.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_E.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 Finally, a user can click the "Create" JButton Component located under the Description box to create the new course. A small circling GIF Image will appear while the new object is being written and all of the input fields will be disabled while the new object is being written to the database. Once this process finishes, all of the input fields will be reset to their original default values and the user will be presented with some variation of the following screen:
 
-![Alt Text](Screenshots/Screenshot_Management_F.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_F.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 At this point, the user can choose to either continue making new classes or move on to a different part of the application.
 
 ### Update Class Information
 The Update Class Information functionality is used to edit the information of a pre-existing course object that is already linked to the current Instructor's Account. This functionality can be accessed in the same manner as the [Create New Class](#Create-New-Class) functionality from within the Management Screen Tab. The interface for the Update Class Information Functionality will initially appear as follows:
 
-![Alt Text](Screenshots/Screenshot_Management_G.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_G.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 As seen above, the user will be presented with a JLabel containing instructions, a drop-down menu, and two button components. The drop-down menu will automatically be loaded with a list of the courses associated with, or "linked", to the current Instructor's account. This list of courses is automatically retrieved from the database and uploaded to each corresponding drop-down menu when the Welcome Screen is being loaded in. Furthermore, each drop-down menu within the application that uses the information, is updated every time the user creates a new class object and links it to his or her account. 
 
 The green "Refresh" button is used in case the previously mentioned process fails:
 
-![Alt Text](Screenshots/Screenshot_Management_H.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_H.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 Clicking this button will cause all of the visible components in the Update Class Information functionality to be disabled while a background thread retrieves an updated list of the associated classes. During this time, the user can continue navigating around the Main Screen without any penalty. Once the process has finished, the drop-down menu will be updated with a list of the currently associated class and the components will be re-enabled for user interaction. These "Refresh" Buttons are available in all parts of the application where a drop-down menu is composed of dynamic data retrieved from the database.
 
 If an Instructor Account is linked to multiple courses using the same Class Title (i.e "Calculus I" or "Physics II"), then the course will automatically be displayed using additional information. This is done so that both the user and the program can better differentiate between the two or more courses using the same title. An example of this technicality in action is shown below:
 
-![Alt Text](Screenshots/Screenshot_Management_D.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_D.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 Once a user has selected one of their associated courses, they can click the "Go" JButton Component to load in the class's information. This will spawn a nearly exact replica of the "Create New Class" interface. However, this interface will already have the chosen course's information loaded into its input fields in addition to an additional button located towards the bottom of the screen. The new segment of the Update Class Information Functionality will appear as follows:
 
-![Alt Text](Screenshots/Screenshot_Management_I.png)
+<br>
+<p align="center">
+ <img src="Screenshots/Screenshot_Management_I.png" width="80%" alt="Application Startup"/>
+</p>
+<br>
 
 As shown in the image above, the current course's data properties will already be set inside of their corresponding fields. The text fields will automatically be set with the number or string data values contained in the class object while the static drop-down menus will all be set to the indexes corresponding with the saved info. From here, the user can edit the course properties in whatever manner they want. However, each input field must contain a custom response before attempting to save the changes. No field may be left with a blank or default answer/selection, or the interface will spawn a new Warning Message Screen to alert the user. The only field that can be left blank on the page is the course description.
 
@@ -289,6 +345,8 @@ After finalizing the new course information, the user can push the changes throu
 The most important part of the Update Class Information Interface is related to the checkbox component located to the right of the "Class Linked to Account:" JLabel. Unchecking this box will unlink the currently chosen class from the Instructor's Account. This means that the Instructor will no longer be able to edit the course objects information or mark attendance for the Students within that class. The course listing will be removed from every dynamic drop-down menu in the application. This feature was installed in the case of an Instructor no longer being able to teach a course. When the checkbox is un-clicked, the course then becomes an "Un-associated Class" which is capable of being picked up by a different Instructor Account. This process preserves the course's connection with the list of students currently enrolled in addition to saving all of their previous attendance records. In the current version of the application, "Un-Associated Classes" can be picked up by any Instructor Account. However, additional security features regarding this feature will be installed in later versions of the application.
 
 ### Delete Class
+### Link Un-Associated Classes
+### Manage Student Access
 
 ## Chat Interface
 ## Attendance Records
