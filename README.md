@@ -1,4 +1,43 @@
-# TCP Automated Attendance (Mothership Attendance)
+# Mothership Attendance
+
+A lightweight, multithreaded Java application that automates classroom attendance by leveraging TCP socket communication between a central "Mothership" server and multiple student clients on a local network.
+
+## 📌 Project Overview
+
+**Mothership Attendance** replaces manual attendance-taking with a fully automated, client-server system. Each student connects to the host machine (Mothership), sending a unique ID that is logged in real time into a CSV file. Ideal for classrooms, trainings, or remote LAN-connected events.
+
+## 🧩 Features
+
+- 🔄 **Real-Time Attendance Logging** – Students instantly transmit unique IDs to the Mothership server for automatic attendance.
+- 🧵 **Multithreaded Java Server** – Handles multiple student connections simultaneously with stable thread handling.
+- 📁 **Automatic CSV Record Export** – Outputs timestamped `.csv` files with attendance logs for seamless recordkeeping.
+- 🔒 **Works Offline via LAN** – Requires no internet connection; runs entirely over local networks.
+- 💡 **Simple & Lightweight** – No GUI or external dependencies—just compile and run.
+
+## 🖼️ Screenshots
+
+**Client Interface:**  
+![Client Screenshot](screenshots/client_screenshot.png)
+
+**Server Logging View:**  
+![Server Screenshot](screenshots/server_screenshot.png)
+
+## 🛠️ Technologies Used
+
+- Java SE 8+
+- TCP Sockets
+- Multithreading
+- File I/O
+- CSV Export
+
+## ⚙️ Setup Instructions
+
+> **Requirement:** Java JDK 8+ installed.
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/Mothership-Attendance.git
+   cd Mothership-Attendance
 
 ![Alt Text](Screenshots/Social_Media_Image.jpg)
 
