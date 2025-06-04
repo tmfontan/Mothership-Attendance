@@ -1,5 +1,7 @@
 # Mothership Attendance
 
+![Application Logo](screenshots/logo_20250604.png)
+
 A lightweight, multithreaded Java application that automates classroom attendance by leveraging TCP socket communication between a central "Mothership" server and multiple student clients on a local network.
 
 ## 📌 Project Overview
