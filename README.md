@@ -1,4 +1,4 @@
-# Mothership Attendance
+<p style="text-align: center;"># Mothership Attendance</p>
 
 ![Application Logo](/Screenshots/Logo_20250604.png)
 
