@@ -19,10 +19,10 @@ A lightweight, multithreaded Java application that automates classroom attendanc
 ## 🖼️ Screenshots
 
 **Client Interface:**  
-![Client Screenshot](screenshots/client_screenshot.png)
+![Client Screenshot](/Screenshots/client_screenshot.png)
 
 **Server Logging View:**  
-![Server Screenshot](screenshots/server_screenshot.png)
+![Server Screenshot](/Screenshots/server_screenshot.png)
 
 ## 🛠️ Technologies Used
 
