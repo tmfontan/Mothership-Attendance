@@ -1,6 +1,6 @@
 
 <div align="center">
-# Mothership Attendance
+<h1># Mothership Attendance</h1>
 </div>
 
 ![Application Logo](/Screenshots/Logo_20250604B.png)
