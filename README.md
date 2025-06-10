@@ -1,4 +1,7 @@
-<h1 style="text-align: center;"># Mothership Attendance</h1>
+
+<div align="center">
+# Mothership Attendance
+</div>
 
 ![Application Logo](/Screenshots/Logo_20250604B.png)
 
