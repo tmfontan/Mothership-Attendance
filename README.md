@@ -1,6 +1,6 @@
 <h1 style="text-align: center;"># Mothership Attendance</h1>
 
-![Application Logo](/Screenshots/Logo_20250604.png)
+![Application Logo](/Screenshots/Logo_20250604B.png)
 
 A lightweight, multithreaded Java application that automates classroom attendance by leveraging TCP socket communication between a central "Mothership" server and multiple student clients on a local network.
 
