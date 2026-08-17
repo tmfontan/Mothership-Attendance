@@ -1,7 +1,7 @@
 
 <div align="center">
 <h1 style="font-variant: small-caps;">Mothership Attendance</h1>
-<img src="/Screenshots/Logo_2025064B.png" alt="Software Logo"></img>
+<img src="https://github.com/tmfontan/Mothership-Attendance/blob/main/Screenshots/Logo_20250604B.png" alt="Software Logo"></img>
 </div>
 
 ![Application Logo](/Screenshots/Logo_20250604B.png)
