@@ -1,10 +1,8 @@
 
 <div align="center">
 <h1 style="font-variant: small-caps;">Mothership Attendance</h1>
-<img src="https://github.com/tmfontan/Mothership-Attendance/blob/main/Screenshots/Logo_20250604B.png" alt="Software Logo"></img>
+<img src="https://github.com/tmfontan/Mothership-Attendance/blob/main/Screenshots/Logo_20250604B.png" alt="Application/Software Logo"></img>
 </div>
-
-![Application Logo](/Screenshots/Logo_20250604B.png)
 
 A lightweight, multithreaded Java application that automates classroom attendance by leveraging TCP socket communication between a central "Mothership" server and multiple student clients on a local network.
 
@@ -28,13 +26,16 @@ A lightweight, multithreaded Java application that automates classroom attendanc
 **Server Logging View:**  
 ![Server Screenshot](/Screenshots/server_screenshot.png)
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies & Architecture Used
 
+- Apache POI
+- CSV Export
 - Java SE 8+
 - TCP Sockets
 - Multithreading
 - File I/O
-- CSV Export
+- HTML5
+- CSS
 
 ## ⚙️ Setup Instructions
 
